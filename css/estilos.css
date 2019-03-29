@@ -1,0 +1,55 @@
+@font-face {font-family: 'DancingScript';src: url(../tipografias/DancingScript-Regular.ttf);}
+body{font-family:'DancingScript';background:#02010a;margin:0;padding: 0;}
+#cabecera{background: #5b7989;border-radius: 10px 10px 0 0;padding: 3% 0 3% 3%;color:#ffffff;animation: 5s slidein;}
+#cabecera #menu a{padding: 1em;}
+#cabecera h1{text-shadow: 2px 1px #02010a;font-size: 1vw 1vh;}
+h1, #menu{ margin: auto;}
+#menu a,#menu a:visited, #menu a:link { color:#ffffff; margin:auto;}
+#inicio{text-decoration: none;}
+.imagencentral{background: #82c3a6; padding: 3%;}
+.imagencentral img{width:auto;box-shadow:2px 2px #02010a;display:block;margin: auto;}
+.imagenessecundarias{background: #d5c75f;color:#02010a;}
+.imagenessecundarias figure{ width: 43%; margin: 5% auto;}
+.imagenessecundarias figure img{ width: 100%; margin: auto; transition: 1s;}
+.imagenessecundarias figure figcaption{ text-align: center;}
+.paisajes img:hover{ transform: rotate(10deg); box-shadow: 2px 2px #82c3a6;}
+.retratos img:hover{ transform:translate(20px,-5px); box-shadow: 2px 2px #82c3a6;}
+#Piedepagina{
+  width: 100%;
+  background: #C6d5c5;
+  margin: auto;
+  border-radius: 0 0 10px 10px;
+}
+#Piedepagina, #Piedepagina a{color:#02010a;}
+#redessociales img{ width: 8%;}
+.final p{font-size: 0.65em;}
+@media (max-width:900px) {
+  .contenedor{width: 100%;}
+  #cabecera{text-align: center;}
+  #cabecera h1{margin-bottom: 5px;}
+  .imagencentral img{width: 80%;}
+  .imagenessecundarias{display: inline-block;width: 100%;}
+}
+@media (min-width:900px){
+  .contenedor{ width: 900px;margin: auto; color:#ffffff;}
+  #cabecera{display: flex;flex-direction: row;}
+  #cabecera h1{margin-left: 0;}
+  #cabecera nav{margin-right: 0;}
+  .imagenessecundarias{display: flex;flex-direction: row;}
+  #Piedepagina{
+    display: flex;
+    flex-direction:row;
+  }
+  .final{ width:25%; margin: 1vw 0.5vh;}
+}
+@keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top:-5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
